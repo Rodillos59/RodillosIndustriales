@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rodillos Industriales | CNC Machining & Industrial Repairs</title>
+  <meta name="description" content="Nearshore CNC machining, flame spray, grinding, and industrial repairs from Mexicali, Mexico. Fast 3–5 day turnaround for U.S. manufacturers.">
+
+  <!-- Open Graph / Share Preview -->
+  <meta property="og:title" content="Rodillos Industriales | CNC Machining & Industrial Repairs">
+  <meta property="og:description" content="Nearshore CNC machining and industrial repairs from Mexicali, Mexico. Fast 3–5 day turnaround for U.S. manufacturers.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="/logo-rim.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <style>
+    :root{
+      --bg:#0b0f14;
+      --panel:#101824;
+      --border:#243246;
+      --text:#e8eef7;
+      --muted:#a9b5c6;
+      --accent:#c62828;   /* brand red */
+      --accent2:#ff6b6b;  /* link red */
+    }
+
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+    header,section,footer{max-width:1100px;margin:auto;padding:28px}
+
+    header{
+      border-bottom:2px solid var(--accent);
+      display:flex;align-items:center;gap:18px;flex-wrap:wrap;
+    }
+    .brand{display:flex;align-items:center;gap:18px;min-width:0}
+    .logo{height:64px;width:auto;display:block}
+    @media (max-width:520px){ .logo{height:52px} }
+
+    .nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap}
+    .nav a{text-decoration:none;color:var(--muted);font-size:14px}
+    .nav a:hover{color:var(--accent2)}
+
+    h1,h2,h3{margin:0 0 10px 0}
+    h2{border-left:4px solid var(--accent);padding-left:12px}
+    .panel{background:var(--panel);border:1px solid var(--border);border-radius:14px;margin-bottom:24px;padding:24px}
+
+    .cta{display:inline-block;margin-top:14px;padding:12px 16px;border-radius:10px;border:1px solid var(--accent);color:var(--text);text-decoration:none;font-weight:bold}
+    .cta:hover{background:var(--accent)}
+    .small{font-size:14px;color:var(--muted)}
+    a{color:var(--accent2)}
+    ul{padding-left:20px}
+    .hr{height:1px;background:var(--border);margin:18px 0}
+
+    /* Gallery */
+    .gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
+    @media (min-width:900px){.gallery{grid-template-columns:repeat(3,minmax(0,1fr))}}
+    .gallery figure{margin:0;background:#0b1220;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+    .gallery img{width:100%;height:220px;object-fit:cover;display:block}
+    .gallery figcaption{padding:10px 12px;color:var(--muted);font-size:13px}
+
+    /* Icon list (SVG line icons) */
+    .iconlist{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px;margin-top:14px}
+    @media (min-width:760px){.iconlist{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    .iconitem{display:flex;gap:12px;align-items:flex-start;background:#0b1220;border:1px solid var(--border);border-radius:12px;padding:12px}
+    .iconitem svg{flex:0 0 auto;width:22px;height:22px;stroke:var(--accent2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+    .iconitem strong{display:block;margin-bottom:2px}
+    .iconitem span{color:var(--muted);font-size:14px}
+
+    /* FAQ */
+    details{background:#0b1220;border:1px solid var(--border);border-radius:12px;padding:14px;margin:10px 0}
+    summary{cursor:pointer;font-weight:bold}
+
+    /* Sticky quote button (mobile) */
+    .sticky-quote{
+      position:fixed;right:16px;bottom:16px;z-index:9999;
+      background:var(--accent);color:#fff;text-decoration:none;font-weight:bold;
+      padding:14px 18px;border-radius:999px;
+      box-shadow:0 8px 22px rgba(0,0,0,.45)
+    }
+    @media (min-width:900px){.sticky-quote{display:none}}
+
+    footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);text-align:center}
+  
+  /* Lathe mini gallery */
+  .mini-gallery img{max-width:100%;}
+</style>
+</head>
+
+<body>
+<a class="sticky-quote" href="#quote">Request a Quote</a>
+
+<header>
+  <div class="brand">
+    <img src="logo-rim.jpg" alt="Rodillos Industriales logo" class="logo">
+    <div>
+      <h1>Rodillos Industriales</h1>
+      <p class="small" style="margin:0">Nearshore CNC Machining &amp; Industrial Repairs • Mexicali, Mexico</p>
+    </div>
+  </div>
+
+  <nav class="nav" aria-label="Site navigation">
+    <a href="#capabilities">Capabilities</a>
+    <a href="services.html">Services</a>
+    <a href="#industries">Industries</a>
+    <a href="#photos">Photos</a>
+    <a href="#faq">FAQ</a>
+    <a href="#quote">Quote</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <nav class="topnav" style="margin-left:auto; display:flex; gap:14px; align-items:center; flex-wrap:wrap;">
+    <a href="#capabilities" style="color:var(--text); text-decoration:none; font-weight:600;">Capabilities</a>
+    <a href="#industries" style="color:var(--text); text-decoration:none; font-weight:600;">Industries</a>
+    <a href="services.html" style="color:var(--text); text-decoration:none; font-weight:600;">Services</a>
+    <a href="photos.html" style="color:var(--text); text-decoration:none; font-weight:600;">Photos</a>
+    <a href="#quote" class="cta" style="padding:10px 14px;">Request a Quote</a>
+  </nav>
+
+</header>
+
+<section class="panel">
+  <h2>Nearshore CNC Machining &amp; Industrial Repairs</h2>
+  <h3>3–5 Day Turnaround for U.S. Companies</h3>
+  <p>
+    Rodillos Industriales supports U.S. manufacturers with precision machining, surface restoration, and fast-response repairs
+    from Mexicali, Mexico. We focus on clear communication, practical engineering support, and dependable delivery for
+    maintenance and production teams.
+  </p>
+  <a class="cta" href="#quote">Request a Quote</a>
+  <a class="cta" style="margin-left:10px" href="tel:+12039807122">Call (203) 980-7122</a>
+  <p class="small" style="margin-top:10px">
+    Email: <a href="mailto:rodillosindustriales59@gmail.com">rodillosindustriales59@gmail.com</a>
+  </p>
+</section>
+
+<section id="capabilities" class="panel">
+  <h2>Capabilities</h2>
+  <ul>
+    <li>CNC Machining (Milling &amp; Turning)</li>
+    <li>Manual &amp; CNC Lathe Work</li>
+    <li>Flame Spray Coatings &amp; Surface Restoration</li>
+    <li>Precision Grinding</li>
+    <li>Industrial Roller Repair &amp; Reconditioning</li>
+    <li>Hydraulic Component Machining</li>
+    <li>Reverse Engineering &amp; Part Restoration</li>
+    <li>Short-Run &amp; Emergency Production</li>
+  </ul>
+
+      <div class="mini-gallery" style="margin-top:14px; display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:14px;">
+        <figure class="mini-card" style="margin:0; border:1px solid var(--border); border-radius:12px; overflow:hidden; background:rgba(255,255,255,0.02);">
+          <img src="lathe-sag20.jpeg" alt="Lathe work — SAG 20 lathe in shop" style="width:100%; height:auto; display:block;">
+          
+        </figure>
+        <figure class="mini-card" style="margin:0; border:1px solid var(--border); border-radius:12px; overflow:hidden; background:rgba(255,255,255,0.02);">
+          <img src="lathe-bozhi.jpeg" alt="Lathe work — large capacity turning lathe" style="width:100%; height:auto; display:block;">
+          
+        </figure>
+      </div>
+
+  <p class="small">For full details, see our <a href="services.html">Services page</a>.</p>
+</section>
+
+
+<section id="equipment" class="panel">
+  <h2>Equipment & Shop Specs</h2>
+  <p class="small" style="margin-top:-6px;">
+    Capability highlights for planning and quoting. For maximum swing/length, tolerances, and material-specific guidance, send your drawing or part details via the quote form.
+  </p>
+
+  <div class="cards" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:14px; margin-top:14px;">
+    <div class="panel" style="margin:0;">
+      <h3 style="margin-top:0;">CNC Machining</h3>
+      <ul>
+        <li>Precision milling & turning for industrial components, shafts, rollers, and repair parts</li>
+        <li>Short-run production and emergency support for maintenance teams</li>
+        <li>Drawings or samples supported (reverse engineering available)</li>
+      </ul>
+    </div>
+
+    <div class="panel" style="margin:0;">
+      <h3 style="margin-top:0;">Manual & CNC Lathes</h3>
+      <ul>
+        <li>General turning, facing, threading, and fit-up work</li>
+        <li>Large-capacity turning for rollers and long components</li>
+        <li>Ideal for repair/rebuild cycles and dimensional recovery</li>
+      </ul>
+    </div>
+
+    <div class="panel" style="margin:0;">
+      <h3 style="margin-top:0;">Grinding</h3>
+      <ul>
+        <li>Precision grinding for surface finish and dimensional restoration</li>
+        <li>Suitable for shafts, rollers, and critical bearing surfaces</li>
+        <li>Final verification with inspection before release</li>
+      </ul>
+    </div>
+
+    <div class="panel" style="margin:0;">
+      <h3 style="margin-top:0;">Flame Spray & Surface Restoration</h3>
+      <ul>
+        <li>Wear-surface buildup and component restoration</li>
+        <li>Common for industrial rollers, journals, and damage repair</li>
+        <li>Integrates with machining/grinding for finish dimensions</li>
+      </ul>
+    </div>
+
+    <div class="panel" style="margin:0;">
+      <h3 style="margin-top:0;">Inspection & Measurement</h3>
+      <ul>
+        <li>In-process checks and final verification</li>
+        <li>Dimensional reporting available on request</li>
+        <li>Clear communication on fit, tolerance, and functional requirements</li>
+      </ul>
+    </div>
+
+    <div class="panel" style="margin:0;">
+      <h3 style="margin-top:0;">Turnaround & Logistics</h3>
+      <ul>
+        <li>Typical turnaround: <strong>3–5 business days</strong> (scope-dependent)</li>
+        <li>Near-border support for U.S. customers (Mexicali, Mexico)</li>
+        <li>Coordinate pickup/delivery and cross-border logistics as needed</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+
+<section id="industries" class="panel">
+  <h2>Industries Served</h2>
+
+  <div class="iconlist">
+    <div class="iconitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V10l9-7 9 7v11"/><path d="M9 21v-6h6v6"/></svg>
+      <div><strong>Industrial Manufacturing</strong><span>Components, fixtures, and repair machining for production equipment.</span></div>
+    </div>
+
+    <div class="iconitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 19h16"/><path d="M7 19V8h10v11"/><path d="M9 11h6"/></svg>
+      <div><strong>Packaging &amp; Converting Equipment</strong><span>Rollers, shafts, wear parts, and corrective machining.</span></div>
+    </div>
+
+    <div class="iconitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20c4-3 6-6 6-9a6 6 0 0 0-12 0c0 3 2 6 6 9z"/><path d="M12 11v3"/></svg>
+      <div><strong>Agriculture &amp; Agricultural Hydraulics</strong><span>Hydraulic-related parts and maintenance support machining.</span></div>
+    </div>
+
+    <div class="iconitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6z"/><path d="M9 7h6"/><path d="M9 11h6"/><path d="M9 15h6"/></svg>
+      <div><strong>Paper, Pulp &amp; Printing Equipment</strong><span>Roller restoration and precision surfaces for converting lines.</span></div>
+    </div>
+
+    <div class="iconitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16"/><path d="M7 12l-3 3"/><path d="M17 12l3 3"/><path d="M7 12l-3-3"/><path d="M17 12l3-3"/></svg>
+      <div><strong>Food Processing Machinery</strong><span>Maintenance support parts, shafts, and fit restoration.</span></div>
+    </div>
+
+    <div class="iconitem">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 7l-4 4 4 4"/><path d="M10 11h10"/><path d="M4 4h6v16H4z"/></svg>
+      <div><strong>MRO &amp; Plant Maintenance</strong><span>Fast-response repairs to reduce downtime and keep lines running.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="photos" class="panel">
+  <h2>Shop &amp; Capabilities Photos</h2>
+  <p class="small">Real equipment and work from our Mexicali shop.</p>
+
+  <div class="gallery">
+    <figure>
+      <img src="cnc.jpeg" alt="CNC machining">
+      <figcaption>CNC machining</figcaption>
+    </figure>
+    <figure>
+      <img src="lathe.jpeg" alt="Lathe work">
+      <figcaption>Lathe work</figcaption>
+    </figure>
+    <figure>
+      <img src="grinding.jpeg" alt="Grinding">
+      <figcaption>Grinding</figcaption>
+    </figure>
+    <figure>
+      <img src="flame-spray.jpeg" alt="Flame spray surface restoration">
+      <figcaption>Flame spray restoration</figcaption>
+    </figure>
+    <figure>
+      <img src="measurement.jpeg" alt="Measurement and inspection">
+      <figcaption>Measurement &amp; inspection</figcaption>
+    </figure>
+    <figure>
+      <img src="part-finished.jpeg" alt="Finished part example">
+      <figcaption>Finished part</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section id="faq" class="panel">
+  <h2>FAQ</h2>
+  <details>
+    <summary>Would you consider Mexicali “nearshore” for U.S. companies?</summary>
+    <p class="small">Yes. In manufacturing, “nearshore” commonly means moving work closer to the U.S. versus overseas. Mexicali is a near-border manufacturing hub that supports fast turnaround and easier coordination.</p>
+  </details>
+  <details>
+    <summary>What files do you accept for quoting?</summary>
+    <p class="small">STEP, DXF, and PDF drawings are preferred. If you do not have drawings, send clear photos and key measurements.</p>
+  </details>
+  <details>
+    <summary>What is your typical lead time?</summary>
+    <p class="small">Many jobs are completed in 3–5 business days depending on scope, materials, and queue.</p>
+  </details>
+  <details>
+    <summary>Can you handle emergency repairs?</summary>
+    <p class="small">Yes, when capacity allows. Include urgency and downtime impact in your request so we can prioritize appropriately.</p>
+  </details>
+</section>
+
+<section id="quote" class="panel">
+  <h2>Request a Quote</h2>
+  <p class="small">Fill out the form below. You’ll receive a confirmation, and we’ll follow up quickly.</p>
+
+  <!-- Tally Embed (your form ID) -->
+  <iframe
+    data-tally-src="https://tally.so/r/xXJx79"
+    loading="lazy"
+    width="100%"
+    height="720"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0"
+    title="Request a Quote"
+    style="border:1px solid var(--border); border-radius:12px; background:#0b1220;">
+  </iframe>
+  <script>
+    (function(){var d=document,s=d.createElement("script");s.src="https://tally.so/widgets/embed.js";s.async=true;d.body.appendChild(s);})();
+  </script>
+
+  <p class="small" style="margin-top:10px">
+    Prefer email? Send details to <a href="mailto:rodillosindustriales59@gmail.com">rodillosindustriales59@gmail.com</a>
+  </p>
+</section>
+
+<section id="contact" class="panel">
+  <h2>Contact</h2>
+  <p>
+    <strong>Rodillos Industriales de México</strong><br>
+    <strong>Abraham Navarro</strong><br>
+    Mexicali, Baja California, Mexico
+  </p>
+
+  <p>
+    Phone: <a href="tel:+12039807122">(203) 980-7122</a><br>
+    Email: <a href="mailto:rodillosindustriales59@gmail.com">rodillosindustriales59@gmail.com</a>
+  </p>
+</section>
+
+<footer>
+  © 2026 Rodillos Industriales · Mexicali, Baja California, Mexico · Serving U.S. customers
+</footer>
+
+</body>
+</html>
