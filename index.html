@@ -63,11 +63,18 @@
     @media (min-width: 900px){.embed-wrap{padding-top:80%}}
     .embed-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;border-radius:12px}
 
-    /* Small top nav (optional) */
+    /* Small top nav */
     .nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap}
     .nav a{text-decoration:none;color:var(--muted);font-size:14px}
     .nav a:hover{color:var(--accent2)}
     @media (max-width:700px){ .nav{display:none} }
+
+    /* Industries SVG icon list */
+    .industry-icons{list-style:none;padding-left:0;margin:12px 0 0 0}
+    .industry-icons li{display:flex;align-items:center;gap:12px;margin:10px 0}
+    .industry-icons .icon{display:inline-flex;align-items:center;justify-content:center;width:28px;height:28px;color:var(--accent)}
+    .industry-icons .icon svg{width:22px;height:22px;display:block}
+    .industry-icons .label{color:var(--text)}
   </style>
 </head>
 
@@ -111,14 +118,14 @@
   </p>
 
   <ul>
-    <li>CNC Machining (Milling & Turning)</li>
-    <li>Manual & CNC Lathe Work</li>
-    <li>Flame Spray Coatings & Surface Restoration</li>
+    <li>CNC Machining (Milling &amp; Turning)</li>
+    <li>Manual &amp; CNC Lathe Work</li>
+    <li>Flame Spray Coatings &amp; Surface Restoration</li>
     <li>Precision Grinding</li>
-    <li>Industrial Roller Repair & Reconditioning</li>
+    <li>Industrial Roller Repair &amp; Reconditioning</li>
     <li>Hydraulic Component Machining</li>
-    <li>Reverse Engineering & Part Restoration</li>
-    <li>Short-Run & Emergency Production</li>
+    <li>Reverse Engineering &amp; Part Restoration</li>
+    <li>Short-Run &amp; Emergency Production</li>
   </ul>
 
   <p class="small">
@@ -129,14 +136,14 @@
 <section id="industries" class="panel">
   <h2>Industries Served</h2>
 
-  <ul>
-    <li>Industrial Manufacturing</li>
-    <li>Packaging & Converting Equipment</li>
-    <li>Agriculture & Agricultural Hydraulics</li>
-    <li>Paper, Pulp & Printing Equipment</li>
-    <li>Food Processing Machinery</li>
-    <li>Maintenance, Repair & Operations (MRO)</li>
-    <li>OEM & Contract Manufacturing Support</li>
+  <ul class="industry-icons">
+    <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V8l6 4V8l6 4V8l6 4v9H3z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M7 21v-4M11 21v-4M15 21v-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="label">Industrial Manufacturing</span></li>
+    <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 8l-9-5-9 5 9 5 9-5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M3 8v10l9 5 9-5V8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 13v10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="label">Packaging &amp; Converting Equipment</span></li>
+    <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 7h5l2 4h3v5h-2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M4 15h10v-4H8l-2-4H4v8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7" cy="18" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="18" r="1.8" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></span><span class="label">Agriculture &amp; Agricultural Hydraulics</span></li>
+    <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3h7l3 3v15a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M14 3v4h4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8 12h8M8 16h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="label">Paper, Pulp &amp; Printing Equipment</span></li>
+    <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 3v8a3 3 0 0 1-6 0V3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 3v8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M14 3v7a2 2 0 0 0 4 0V3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M18 3v18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M8 21v-8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="label">Food Processing Machinery</span></li>
+    <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 6.5a4 4 0 0 0-5.7 5.6L4 17v3h3l4.9-4.8a4 4 0 0 0 5.6-5.7l-2.1 2.1-2.9-2.9 2-2.2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></span><span class="label">Maintenance, Repair &amp; Operations (MRO)</span></li>
+    <li><span class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21V4h6v3h6v4H12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 11l3 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M6 7h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M3 21h18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span><span class="label">OEM &amp; Contract Manufacturing Support</span></li>
   </ul>
 
   <p class="small">
@@ -145,7 +152,7 @@
 </section>
 
 <section class="panel" id="photos">
-  <h2>Shop & Capabilities Photos</h2>
+  <h2>Shop &amp; Capabilities Photos</h2>
   <p class="small">Real equipment and work from our Mexicali shop.</p>
 
   <div class="gallery">
@@ -163,11 +170,11 @@
     </div>
     <div class="cardimg">
       <img src="flame-spray.jpeg" alt="Flame spray coating process">
-      <div class="caption">Flame spraying (wear resistance & restoration)</div>
+      <div class="caption">Flame spraying (wear resistance &amp; restoration)</div>
     </div>
     <div class="cardimg">
       <img src="measurement.jpeg" alt="Inspection and measurement">
-      <div class="caption">Inspection & measurement</div>
+      <div class="caption">Inspection &amp; measurement</div>
     </div>
     <div class="cardimg">
       <img src="part-finished.jpeg" alt="Finished machined component">
@@ -187,7 +194,7 @@
 
   <div class="embed-wrap" style="margin-top:16px">
     <iframe
-      data-tally-src="https://tally.so/embed/xXJx79?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+      data-tally-src="https://tally.so/embed/xXJx79?alignLeft=1&amp;hideTitle=1&amp;transparentBackground=1&amp;dynamicHeight=1"
       loading="lazy"
       title="Request a Quote">
     </iframe>
