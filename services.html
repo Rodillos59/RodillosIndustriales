@@ -3,137 +3,254 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Services | Rodillos Industriales</title>
-  <meta name="description" content="CNC machining, flame spray coatings, grinding, roller repair, hydraulic component machining, and industrial repairs.">
-
-  <meta property="og:title" content="Services | Rodillos Industriales">
-  <meta property="og:description" content="Capabilities and service details for nearshore machining and industrial repair support.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="/logo-rim.jpg">
-
+  <title>Services | Rodillos Industriales de Mexico</title>
+  <meta name="description" content="CNC machining, industrial repair, tooling, and reverse engineering in Mexicali, Mexico serving U.S. manufacturers.">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" href="/favicon.png">
-
   <style>
     :root{
-      --bg:#0b0f14; --panel:#101824; --border:#243246; --text:#e8eef7; --muted:#a9b5c6;
-      --accent:#c62828; --accent2:#ff6b6b;
+      --bg:#0b0f14;
+      --panel:#101824;
+      --border:#243246;
+      --text:#e8eef7;
+      --muted:#a9b5c6;
+      --accent:#c62828;   /* brand red */
+      --accent2:#ff6b6b;  /* lighter red for links */
+      --ok:#39d98a;
+      --shadow: 0 14px 40px rgba(0,0,0,.35);
     }
     *{box-sizing:border-box}
-    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
-    header,section,footer{max-width:1100px;margin:auto;padding:28px}
-    header{border-bottom:2px solid var(--accent);display:flex;align-items:center;gap:18px;flex-wrap:wrap}
-    .brand{display:flex;align-items:center;gap:18px;min-width:0}
-    .logo{height:64px;width:auto;display:block}
-    @media (max-width:520px){ .logo{height:52px} }
-    .nav{margin-left:auto;display:flex;gap:14px;flex-wrap:wrap}
-    .nav a{text-decoration:none;color:var(--muted);font-size:14px}
-    .nav a:hover{color:var(--accent2)}
-    h1,h2,h3{margin:0 0 10px 0}
-    h2{border-left:4px solid var(--accent);padding-left:12px}
-    .panel{background:var(--panel);border:1px solid var(--border);border-radius:14px;margin-bottom:24px;padding:24px}
-    .cta{display:inline-block;margin-top:14px;padding:12px 16px;border-radius:10px;border:1px solid var(--accent);color:var(--text);text-decoration:none;font-weight:bold}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.55}
+    a{color:var(--accent2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    header,main,footer{max-width:1100px;margin:auto;padding:26px}
+    header{
+      border-bottom:2px solid var(--accent);
+      display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap
+    }
+    .brand{display:flex;align-items:center;gap:14px;min-width:0}
+    .logo{height:54px;width:auto;display:block}
+    .titlewrap{min-width:0}
+    .titlewrap h1{margin:0;font-size:22px;letter-spacing:.2px}
+    .titlewrap p{margin:2px 0 0;color:var(--muted);font-size:13px}
+    nav{display:flex;gap:12px;flex-wrap:wrap}
+    .navlink{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:10px 12px;border:1px solid var(--border);border-radius:12px;
+      background:rgba(255,255,255,.02)
+    }
+    .navlink:hover{border-color:var(--accent)}
+    .panel{
+      background:var(--panel);
+      border:1px solid var(--border);
+      border-radius:16px;
+      padding:20px;
+      box-shadow:var(--shadow);
+      margin:18px 0;
+    }
+    h2{margin:0 0 10px 0;font-size:20px}
+    h3{margin:0 0 8px 0;font-size:16px}
+    .small{color:var(--muted);font-size:13px}
+    .grid{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}
+    .col6{grid-column:span 6}
+    .col4{grid-column:span 4}
+    .col8{grid-column:span 8}
+    .col12{grid-column:span 12}
+    @media (max-width:900px){ .col6,.col4,.col8{grid-column:span 12} }
+    .card{
+      background:rgba(255,255,255,.02);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:16px;
+      height:100%;
+    }
+    .cardhead{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+    .icon{
+      width:34px;height:34px;border-radius:10px;
+      display:grid;place-items:center;
+      border:1px solid var(--border);
+      background:rgba(198,40,40,.08);
+    }
+    .icon svg{width:18px;height:18px;stroke:var(--accent2);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+    ul{margin:10px 0 0 18px;padding:0}
+    li{margin:6px 0;color:var(--text)}
+    .ctaRow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+    .cta{
+      display:inline-flex;align-items:center;gap:10px;
+      padding:12px 14px;border-radius:12px;border:1px solid var(--accent);
+      color:var(--text);background:transparent;font-weight:bold
+    }
     .cta:hover{background:var(--accent)}
-    .small{font-size:14px;color:var(--muted)}
-    a{color:var(--accent2)}
-    ul{padding-left:20px}
-    .grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:14px}
-    @media (min-width:900px){.grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
-    .tile{background:#0b1220;border:1px solid var(--border);border-radius:12px;padding:14px}
-    .tile strong{display:block;margin-bottom:6px}
-    .tile span{color:var(--muted);font-size:14px}
-    footer{border-top:1px solid var(--border);font-size:13px;color:var(--muted);text-align:center}
+    .note{
+      border-left:4px solid var(--accent);
+      padding:10px 12px;background:rgba(198,40,40,.08);
+      border-radius:10px;color:var(--text)
+    }
+    footer{border-top:1px solid var(--border);text-align:center;color:var(--muted);font-size:13px}
+    .kicker{color:var(--muted);margin:0 0 8px 0}
+    .pill{
+      display:inline-flex;align-items:center;gap:8px;
+      padding:8px 10px;border-radius:999px;border:1px solid var(--border);
+      background:rgba(255,255,255,.02);color:var(--muted);font-size:12px
+    }
+    .pill b{color:var(--text)}
   </style>
 </head>
-
 <body>
-<header>
-  <div class="brand">
-    <a href="index.html" style="display:inline-flex;align-items:center;gap:18px;text-decoration:none;color:inherit">
-      <img src="logo-rim.jpg" alt="Rodillos Industriales logo" class="logo">
-      <div>
-        <h1 style="margin:0">Rodillos Industriales</h1>
-        <p class="small" style="margin:0">Nearshore CNC Machining &amp; Industrial Repairs • Mexicali, Mexico</p>
+  <header>
+    <div class="brand">
+      <img class="logo" src="logo-rim.jpg" alt="RIM Rodillos Industriales de Mexico logo">
+      <div class="titlewrap">
+        <h1>Services</h1>
+        <p>Rodillos Industriales de Mexico — Mexicali, MX (serving U.S. manufacturers)</p>
       </div>
-    </a>
-  </div>
+    </div>
+    <nav>
+      <a class="navlink" href="index.html">Home</a>
+      <a class="navlink" href="photos.html">Photos & Videos</a>
+      <a class="navlink" href="cnc.html">CNC (VF-3)</a>
+      <a class="navlink" href="#quote">Request a Quote</a>
+    </nav>
+  </header>
 
-  <nav class="nav" aria-label="Site navigation">
-    <a href="index.html">Home</a>
-    <a href="services.html" style="color:var(--text)">Services</a>
-    <a href="index.html#industries">Industries</a>
-    <a href="index.html#photos">Photos</a>
-    <a href="index.html#faq">FAQ</a>
-    <a href="index.html#quote">Quote</a>
-    <a href="index.html#contact">Contact</a>
-  </nav>
-</header>
+  <main>
+    <section class="panel">
+      <p class="kicker">What we do</p>
+      <h2>Precision CNC, Tooling, and Industrial Repair</h2>
+      <p>
+        We support maintenance and production teams with fast-response machining, tooling, and repair work.
+        Typical jobs include shafts, rollers, housings, fixtures, wear components, and custom parts built from prints or samples.
+      </p>
+      <div class="ctaRow">
+        <a class="cta" href="#quote">Request a Quote</a>
+        <a class="cta" href="tel:+12039807122">Call (203) 980-7122</a>
+      </div>
+      <div style="margin-top:12px;display:flex;gap:10px;flex-wrap:wrap">
+        <span class="pill"><b>CAD/CAM</b> SolidWorks & Mastercam</span>
+        <span class="pill"><b>Programming</b> 2D & 3D</span>
+        <span class="pill"><b>Capabilities</b> milling • turning • grinding</span>
+      </div>
+    </section>
 
-<section class="panel">
-  <h2>Services</h2>
-  <p>
-    Below are our core services. For the fastest quote, include material, tolerances, quantity, and target delivery date.
-  </p>
-  <a class="cta" href="index.html#quote">Request a Quote</a>
-  <a class="cta" style="margin-left:10px" href="tel:+12039807122">Call (203) 980-7122</a>
-  <p class="small" style="margin-top:10px">Typical turnaround: <strong>3–5 business days</strong> (scope dependent).</p>
-</section>
+    <section class="panel">
+      <h2>Capabilities</h2>
+      <div class="grid" role="list">
+        <div class="col6" role="listitem">
+          <div class="card">
+            <div class="cardhead">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M7 7h10v10H7z"/><path d="M4 4h3v3H4zM17 4h3v3h-3zM4 17h3v3H4zM17 17h3v3h-3z"/></svg>
+              </div>
+              <div>
+                <h3>CNC Machining</h3>
+                <div class="small">Milling and turning for production and repair parts</div>
+              </div>
+            </div>
+            <ul>
+              <li>CNC milling & turning</li>
+              <li>Manual & CNC lathe work</li>
+              <li>Fabrication of custom parts (from print or sample)</li>
+              <li>Gears and mechanical components</li>
+            </ul>
+          </div>
+        </div>
 
-<section class="panel">
-  <h2>Capabilities Overview</h2>
-  <div class="grid">
-    <div class="tile"><strong>CNC Machining</strong><span>Milling &amp; turning for precision components and short-run jobs.</span></div>
-    <div class="tile"><strong>Lathe Work</strong><span>Manual &amp; CNC lathe work for shafts, rollers, and hydraulic components.</span></div>
-    <div class="tile"><strong>Precision Grinding</strong><span>Grinding for fits, surfaces, and finish requirements.</span></div>
-    <div class="tile"><strong>Flame Spray Coatings</strong><span>Surface restoration for wear resistance and dimensional recovery.</span></div>
-    <div class="tile"><strong>Roller Repair</strong><span>Reconditioning, resurfacing, and corrective machining.</span></div>
-    <div class="tile"><strong>Reverse Engineering</strong><span>Repair/rebuild when prints are limited or unavailable.</span></div>
-  </div>
-</section>
+        <div class="col6" role="listitem">
+          <div class="card">
+            <div class="cardhead">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M14 7l3 3-8 8H6v-3z"/><path d="M16 5l3 3"/></svg>
+              </div>
+              <div>
+                <h3>Engineering & CAD/CAM</h3>
+                <div class="small">From concept to programmed toolpaths</div>
+              </div>
+            </div>
+            <ul>
+              <li>Design and technical drawings</li>
+              <li>SolidWorks & Mastercam programming (2D / 3D)</li>
+              <li>Reverse engineering (replicate / improve existing parts)</li>
+              <li>Fixture and gauge design support</li>
+            </ul>
+          </div>
+        </div>
 
-<section class="panel">
-  <h2>Service Details</h2>
+        <div class="col6" role="listitem">
+          <div class="card">
+            <div class="cardhead">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M8 21h8"/><path d="M12 3v10"/><path d="M7 8l5-5 5 5"/></svg>
+              </div>
+              <div>
+                <h3>Tooling, Dies & Molds</h3>
+                <div class="small">Build and repair tooling for production</div>
+              </div>
+            </div>
+            <ul>
+              <li>Molds for extrusion and blow molding</li>
+              <li>Progressive dies</li>
+              <li>Dies, punches, and tooling components</li>
+              <li>Industrial fixtures and custom tooling</li>
+            </ul>
+          </div>
+        </div>
 
-  <h3>CNC Machining (Milling &amp; Turning)</h3>
-  <ul>
-    <li>Precision components, fixtures, and replacement parts</li>
-    <li>Short-run production and emergency support</li>
-    <li>Repair machining for worn housings, shafts, and interfaces</li>
-  </ul>
+        <div class="col6" role="listitem">
+          <div class="card">
+            <div class="cardhead">
+              <div class="icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M3 20h18"/><path d="M6 20V8l6-4 6 4v12"/><path d="M9 14h6"/></svg>
+              </div>
+              <div>
+                <h3>Finishing, Heat Treat & Grinding</h3>
+                <div class="small">Restore wear surfaces and dimensional accuracy</div>
+              </div>
+            </div>
+            <ul>
+              <li>Grinding (surface / dimensional recovery)</li>
 
-  <h3>Flame Spray Coatings &amp; Restoration</h3>
-  <ul>
-    <li>Dimensional restoration for worn journals and bearing surfaces</li>
-    <li>Wear-resistant coating applications (application dependent)</li>
-    <li>Preparation + finish machining/grinding</li>
-  </ul>
+    <section class="panel" id="quote">
+      <h2>Request a Quote</h2>
+      <p class="small">Send your print, photo, or job details. We typically reply within one business day.</p>
+      <div class="note small" style="margin-bottom:12px">
+        Use the quote form on the Home page if that is already set up. This section is here as a backup link for customers.
+      </div>
+      <div class="ctaRow">
+        <a class="cta" href="index.html#quote">Open Quote Form</a>
+        <a class="cta" href="mailto:rodillosindustriales59@gmail.com?subject=Request%20a%20Quote%20-%20Rodillos%20Industriales">Email: rodillosindustriales59@gmail.com</a>
+      </div>
+    </section>
 
-  <h3>Precision Grinding</h3>
-  <ul>
-    <li>Surface and cylindrical grinding (scope dependent)</li>
-    <li>Finish and fit improvements for critical assemblies</li>
-    <li>Corrective work for rollers and shafts</li>
-  </ul>
+    <section class="panel">
+      <h2>Preferred Job Details</h2>
+      <div class="grid">
+        <div class="col6">
+          <div class="card">
+            <h3>Send</h3>
+            <ul>
+              <li>Drawing (PDF), step file, or clear photos with dimensions</li>
+              <li>Material (or current material if it’s a repair)</li>
+              <li>Quantity and target lead time</li>
+              <li>Tolerance / critical features</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col6">
+          <div class="card">
+            <h3>We provide</h3>
+            <ul>
+              <li>Confirmed scope and manufacturability notes</li>
+              <li>Lead time estimate and logistics plan</li>
+              <li>Quality checks aligned to your critical dimensions</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <h3>Industrial Roller Repair &amp; Reconditioning</h3>
-  <ul>
-    <li>Resurfacing, truing, and corrective machining</li>
-    <li>Diameter recovery and finish improvements</li>
-    <li>Support for packaging, paper, printing, and processing equipment</li>
-  </ul>
-
-  <h3>Agriculture &amp; Hydraulic Component Machining</h3>
-  <ul>
-    <li>Hydraulic-related shafts, sleeves, and components</li>
-    <li>Repair machining and restoration of worn interfaces</li>
-    <li>Nearshore support for agricultural equipment maintenance</li>
-  </ul>
-
-  <p class="small">Want examples? See our <a href="index.html#photos">shop photos</a>.</p>
-</section>
-
-<footer>
-  © 2026 Rodillos Industriales · All rights reserved
-</footer>
+  <footer>
+    Rodillos Industriales de Mexico • Contact: Abraham Navarro • (203) 980-7122 • rodillosindustriales59@gmail.com
+  </footer>
 </body>
 </html>
